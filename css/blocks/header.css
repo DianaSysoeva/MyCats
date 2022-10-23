@@ -1,0 +1,18 @@
+header {
+	background-color: rgba(215, 241, 244, 0.5);
+   padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 1px 3px 5px rgb(122, 146, 161);
+
+}
+.header__menu-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.header__menu-logo{
+	display: flex;
+	gap: 15px;
+	font-size: 28px;
+}

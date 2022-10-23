@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cats</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body class="wrapper">
+	<header class="header">
+		<div class="header__container container">
+			<nav class="header__menu-menu">
+				<a href="#" class="header__menu-logo">
+					<i class="fa-sharp fa-solid fa-cat"></i> Cats
+				</a>
+				<button class="button" id="addCat"><i class="fa-solid fa-circle-plus"></i></button>
+			</nav>
+		</div>
+	</header>
+	<main class="main__block">
+		<div class="main__block container">
+			<section class="cards">
+				<h2 class="visually-hidden">Cats</h2>
+			</section>
+		</div>
+	</main>
+
+
+	<footer class="footer">
+		<div class="footer__container container">
+			<p class="copy">Cats © 2022</p>
+			<div class="footer__social">
+				<div class="social__links">
+					<a href="#" class="links"><i class="fa-brands fa-telegram"></i></a>
+					<a href="#" class="links"><i class="fa-brands fa-github"></i></a>
+					<a href="#" class="links"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<section class="popup popup-new-cats">
+		<div class="popup__wrapper">
+			<h2>Добавить котика</h2>
+			<button class="popup__button-close button"><i class="fa-solid fa-xmark"></i></button>
+			<form class="form__cats" id="form-cats">
+				<div class="form__picture"></div>
+				<input type="number" class="form__cats-input" name="id" min=1 required placeholder="id">
+				<input type="text" class="form__cats-input" name="name" required placeholder="Имя">
+				<input type="number" class="form__cats-input" name="age" min=1 placeholder="Возраст">
+				<textarea name="description" class="form__cats-input textarea" placeholder="Описание"></textarea>
+				<input type="number" class="form__cats-input form__ratio" name="rate" min=1 max=10 placeholder="Рейтинг">
+				<label class="form__checkbox-wrapper">
+					<input type="checkbox" class="form__checkbox-input" name="favourite">
+					<p class="form__checkbox-label">Любимый котик</p>
+					<p class="form__checkbox-icon"><i class="fa-regular fa-heart"></i></p>
+				</label>
+				<input type="url" class="form__cats-input cats__pic" name="img_link" placeholder="Ссылка на фото">
+				<button type="submit" class="form__button button">Добавить</button>
+			</form>
+		</div>
+		</div>
+	</section>
+
+	<template id="card-templ">
+		<div class="card">
+			<img src="#" class="card__pic" alt="">
+			<a href="#" class="card__link">
+				<h2 class="card__name">Снежок</h2>
+			</a>
+			<button class="card__like"><i class="fa-sharp fa-solid fa-heart"></i></button>
+		</div>
+
+	</template>
+	<script src="./js/cats.js" defer></script>
+	<script src="./js/card.js" defer></script>
+	<script src="./js/popup.js" defer></script>
+	<script src="./js/index.js" defer></script>
+</body>
+
+</html>

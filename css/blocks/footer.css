@@ -1,0 +1,18 @@
+footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 0 0 3px 0 rgb(132, 177, 179);
+
+}
+
+.footer__container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+
+}
+.footer__social{
+	font-size: 24px;
+	
+}

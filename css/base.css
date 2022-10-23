@@ -1,0 +1,38 @@
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+
+}
+
+body {
+	margin: 0;
+	border: 0;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+a {
+
+	text-decoration: none;
+	color: #213053;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+
+}

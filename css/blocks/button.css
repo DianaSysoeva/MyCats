@@ -1,0 +1,11 @@
+button {
+	display: flex;
+	gap: 10px;
+	border-radius: 12px;
+	background-color: rgb(77, 141, 132);
+	color: rgb(162, 224, 202);
+	padding: 5px 15px;
+	font-size: 25px;
+	
+}
+

@@ -1,0 +1,75 @@
+form {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.textarea {
+	grid-row: span 2;
+	resize: none;
+	height: 100%;
+}
+
+.form__picture {
+	grid-row: span 3;
+	background-image: url("..//..//image/picture/f6dabcf46c57210c7801657a9ecbd5ae.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+.form__button {
+	font-size: 16px;
+	width: 100%;
+}
+.form__button:hover {
+	background-color: rgb(211, 104, 41);
+}
+
+.form__cats-input {
+	outline: none;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid rgb(221, 207, 207);
+	border-radius: 5px;
+	padding: 6px 6px;
+}
+
+
+.form__cats-input:focus {
+	border: 1px solid rgb(209, 240, 234);
+}
+
+.form__checkbox-icon {
+	font-size: 18px;
+
+}
+
+.form__checkbox-wrapper {
+	display: flex;
+	align-items: center;
+	position: relative;
+	gap: 8px;
+
+}
+
+.form__checkbox-input {
+	position: absolute;
+	appearance: none;
+	
+}
+
+.form__checkbox-input:focus~.form__checkbox-icon,
+.form__checkbox-input:focus~.form__checkbox-label {
+	color:darkslategrey;
+}
+
+.form__checkbox-input:checked~.form__checkbox-icon,
+.form__checkbox-input:checked~.form__checkbox-label {
+	color:rgb(64, 174, 115);
+}
+
+.form__checkbox-input:checked:focus~.form__checkbox-icon,
+.form__checkbox-input:checked:focus~.form__checkbox-label {
+	opacity: 0.5;
+}
