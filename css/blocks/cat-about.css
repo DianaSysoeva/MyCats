@@ -1,0 +1,139 @@
+.cat-about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 10px;
+	align-items: center;
+	justify-items: start;
+}
+
+.cat-about__title {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.cat-about__image {
+	width: 100%;
+	aspect-ratio: 4/3;
+	object-fit: cover;
+	grid-row: 1 / 5;
+	
+
+}
+/* .cat-about__image:hover {
+transform: scale(1, 1);
+transition: ease-in-out, 3s;
+} */
+
+.cat-about__desc {
+	grid-column: 1 / -1;
+	font-size: 19px;
+	padding: 5px;
+}
+
+.cat-about__id {
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	gap: 5px;
+	background-color:rgb(50, 139, 180);
+	padding: 5px 10px;
+	border-radius: 10px;
+	color: rgb(154, 224, 198);
+}
+
+
+.cat-about__id:before {
+	content: "id:";
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.cat-about__favourite-like {
+	border: none;
+	border-color: transparent;
+	font-size: 20px;
+	color: rgba(241, 205, 205, 0.751);
+	cursor: pointer;
+	
+}
+
+.cat-about__favourite_active {
+	color: rgb(147, 59, 59)
+}
+
+.cat-about__name {
+	margin: 0;
+	padding: 5px;
+}
+
+.cat-about__rating-cat {
+	white-space:nowrap ;
+	
+}
+
+.cat-about__rating-cat:before {
+	content: "Рейтинг:";
+	font-weight: bold;
+	margin-right: 5px;
+	font-size: 18px;
+	grid-row: span 4;
+}
+.cat-about__edite, .cat-about__save, .cat-about__delete {
+	border-radius: 7px;
+	padding: 5px 8px;
+	display: flex;
+	gap:5px;
+	border: 1px solid rgb(11, 53, 36);
+	align-self: flex-start;
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+
+	background-color: rgb(217, 229, 226);
+}
+
+.cat-about__edite {
+	top: 20px;
+	margin-left: 20px;
+	margin-right: -70px;
+} 
+.cat-about__save {
+	top: 20px;
+	/* left: -20px; */
+	margin-right: -5px;
+	padding: 5px 5px;
+
+
+}
+.cat-about__delete {
+	top: 22px;
+	margin-right: -5px;
+	padding: 5px 8px;
+
+}
+
+.cat-about__edite_hidden {
+	display: none;
+	
+} 
+
+.cat-about__save_hidden {
+	display: none; 
+}
+/* .cat-about [contentEditable="true"] {
+	box-shadow: 0 0 1px 1px var(--accent-color);
+	outline: none;
+}
+
+.cat-about [contentEditable="true"]:focus {
+	box-shadow: 0 0 1px 1px var(--primary-color);
+	outline: none;
+}  */
+
+.cat-about__age-val {
+	padding: 5px;
+	grid-row: 3/4;
+
+}

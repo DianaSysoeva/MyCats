@@ -1,4 +1,4 @@
-class PopupCat {
+export class PopupCat {
 	constructor(className) {
 		this._className = className;
 		this.popupCat = document.querySelector(`.${className}`);
@@ -10,6 +10,12 @@ class PopupCat {
 			console.log(event.key);
 			this.closePopup();
 		}
+	}
+	
+	setContentCat(contentNode){
+		const boxContent = this.popupCat.querySelector(".popup__content");
+		boxContent.innerHTML = '';
+		boxContent.append(contentNode);
 	}
 
 	openPopup() {
