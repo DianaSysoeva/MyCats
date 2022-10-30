@@ -18,11 +18,11 @@ export class CatsAbout {
 		this._data = this._cardExample.getData()
 
 		this.catPicture.src = this._data.img_link;
-		this.catDesc.textContent = this._data.description;
+		this.catDescription.textContent = this._data.description;
 		this.catName.textContent = this._data.name;
 		this.catAgeText.textContent = this._data.age;
 		this.catId.textContent = this._data.id;
-		console.log(this._data);
+
 	}
 
 	_getTempl() {
@@ -39,9 +39,9 @@ export class CatsAbout {
 		this.catName = this.element.querySelector(".cat-about__name");
 		this.catId = this.element.querySelector(".cat-about__id");
 		this.catRaiting = this.element.querySelector(".cat-about__rating");
-		this.catAgeVal = this.element.querySelector(".cat-about__age-val");
+		this.catAgeValue = this.element.querySelector(".cat-about__age-val");
 		this.catAgeText = this.element.querySelector(".cat-about__age-text");
-		this.catDesc = this.element.querySelector(".cat-about__desc");
+		this.catDescription = this.element.querySelector(".cat-about__description");
 
 		this.setEventListener();
 		return this.element;

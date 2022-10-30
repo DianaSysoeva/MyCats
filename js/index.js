@@ -110,7 +110,6 @@ function updateLocalStorage(data, actions) {
 }
 
 function handleOpenCatTitle(cardExample) {
-	console.log(cardExample)
 	catsAboutExample.setData(cardExample)
 	popupCatAbout.setContentCat(catsAboutElem)
 	popupCatAbout.openPopup()

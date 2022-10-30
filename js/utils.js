@@ -1,3 +1,5 @@
+
+
 export function setDataUpdate(minutes, key) {
 	const setTime = new Date(new Date().getTime() + minutes * 60000)
 	localStorage.setItem(key, setTime);
@@ -36,3 +38,17 @@ export const printNumerals = (number, titles) => {
 	}
 	return `${titles[1]}`;
 };
+
+
+{/* 
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+<i class="fa-regular fa-star"></i> 
+*/}
+export function generateFavRaiting() {
+	const rateElem = [];
+	for (let index = 0; index < 10; index++) {
+		const elem = array[index];
+
+	}
+}
