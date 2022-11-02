@@ -42,25 +42,23 @@ class Api {
 	}
 
 	updateCatById(idCat, data) {
-		fetch(`${this._url}/update/${idCat}`, {
+		return fetch(`${this._url}/update/${idCat}`, {
 			method: "PUT",
 			body: JSON.stringify(data),
 			headers: this._headers
-		})
+		}).then(this._onRes)
 	}
 
 	getCatById(idCat) {
-		fetch(`${this._url}/show/${idCat}`, {
+		return fetch(`${this._url}/show/${idCat}`, {
 			method: "GET",
-
-		})
+		}).then(this._onRes)
 	}
 
 	deleteCatById(idCat) {
-		fetch(`${this._url}/delete/${idCat}`, {
+		return fetch(`${this._url}/delete/${idCat}`, {
 			method: "DELETE",
-
-		})
+		}).then(this._onRes)
 	}
 
 }

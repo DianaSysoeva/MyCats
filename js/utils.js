@@ -1,4 +1,4 @@
-
+import { MAX_RATING_CAT } from "./constants.js";
 
 export function setDataUpdate(minutes, key) {
 	const setTime = new Date(new Date().getTime() + minutes * 60000)
@@ -40,15 +40,25 @@ export const printNumerals = (number, titles) => {
 };
 
 
-{/* 
+{/* иконки для рейтинга котика
+
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star-half-stroke"></i>
 <i class="fa-regular fa-star"></i> 
 */}
-export function generateFavRaiting() {
+export function createFavRating(rate) {
 	const rateElem = [];
-	for (let index = 0; index < 10; index++) {
-		const elem = array[index];
+	for (let index = 0; index < MAX_RATING_CAT; index++) {
+		if (index < rate && rate % 1 === 0) {
+			rateElem.push('<i class="fa-solid fa-star"></i>');
+		} else if (index < Math.floor(rate) && rate % 1 !== 0) {
+			rateElem.push('<i class="fa-solid fa-star"></i>');
+		} else if (index === Math.floor(rate) && rate % 1 !== 0) {
+			rateElem.push('<i class="fa-solid fa-star-half-stroke"></i>');
+		} else {
+			rateElem.push('<i class="fa-regular fa-star"></i>');
+		}
 
 	}
+	return rateElem.join('');
 }

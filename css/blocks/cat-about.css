@@ -1,15 +1,16 @@
 .cat-about {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	column-gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	justify-items: start;
+	gap: 12px;
 }
 
 .cat-about__title {
 	display: flex;
 	align-items: center;
 	gap: 5px;
+	font-size: 18px;
 }
 
 .cat-about__image {
@@ -17,13 +18,11 @@
 	aspect-ratio: 4/3;
 	object-fit: cover;
 	grid-row: 1 / 5;
-	
-
 }
 
 .cat-about__description {
-	grid-column: 1 / -1;
-	font-size: 19px;
+	grid-column: 1 / 2;
+	font-size: 20px;
 	padding: 5px;
 }
 
@@ -32,12 +31,11 @@
 	font-weight: bold;
 	display: flex;
 	gap: 5px;
-	background-color:rgb(111, 166, 191);
+	background-color: rgb(177, 203, 215);
 	padding: 10px 10px;
 	border-radius: 8px;
-	color: rgb(154, 224, 198);
+	color: rgb(57, 87, 76);
 }
-
 
 .cat-about__id:before {
 	content: "id:";
@@ -46,19 +44,17 @@
 	margin-right: 20px;
 }
 
-.cat-about__favourite-like {
+.cat-about__favourite {
 	border: none;
-
 	border-color: transparent;
 	background-color: transparent;
-	font-size: 20px;
-	color: rgba(187, 101, 101, 0.751);
+	font-size: 15px;
+	color: rgba(165, 184, 193, 0.751);
 	cursor: pointer;
-	
 }
 
 .cat-about__favourite_active {
-	color: rgb(147, 59, 59)
+	color: rgb(147, 59, 59);
 }
 
 .cat-about__name {
@@ -67,8 +63,7 @@
 }
 
 .cat-about__rating-cat {
-	white-space:nowrap ;
-	
+	white-space: nowrap;
 }
 
 .cat-about__rating-cat:before {
@@ -76,53 +71,51 @@
 	font-weight: bold;
 	margin-right: 5px;
 	font-size: 18px;
-
 }
-.cat-about__edite, .cat-about__save, .cat-about__delete {
+.cat-about__edite,
+.cat-about__save,
+.cat-about__delete {
 	border-radius: 7px;
 	padding: 5px 5px;
 	display: flex;
-	gap:5px;
+	gap: 5px;
 	border: 1px solid rgb(11, 53, 36);
-	align-self: flex-start;
 	cursor: pointer;
+	font-size: 18px;
 	position: absolute;
 	right: 20px;
-
-	background-color: rgb(217, 229, 226);
+	background-color: rgb(132, 177, 166);
 }
 
 .cat-about__edite {
 	top: 20px;
-	right: 50px;
-	
-} 
+	margin-right: 5px;
+}
 .cat-about__save {
 	top: 20px;
-	margin-right: -5px;
-	padding: 5px 5px;
-
-
+	margin-right: 5px;
 }
 .cat-about__delete {
 	top: 79px;
-	margin-right: -5px;
-	margin-left: -40px;
-	padding: 5px 8px;
-
+}
+.cat-about [contentEditable="true"] {
+	box-shadow: 0 0 1px 1px rgb(195, 119, 75);
+	outline: none;
 }
 
+.cat-about [contentEditable="true"]:focus {
+	box-shadow: 0 0 1px 1px rgb(52, 113, 192);
+	outline: none;
+}
 .cat-about__edite_hidden {
 	display: none;
-	
-} 
+}
 
 .cat-about__save_hidden {
-	display: none; 
+	display: none;
 }
 
 .cat-about__age-val {
 	padding: 5px;
 	grid-row: 3/4;
-
 }
