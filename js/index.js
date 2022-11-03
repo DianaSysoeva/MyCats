@@ -14,7 +14,7 @@ const buttonOpenPopup = document.querySelector("#addCat");
 const buttonOpenPopupLogin = document.querySelector("#addLogin");
 const formNewCat = document.querySelector("#form-cats");
 const formLoginAuth = document.querySelector("#form-cat-login");
-
+const buttonEdite = document.querySelector(".cat-about__edite");
 
 const addPopupCat = new PopupCat("popup-new-cats");
 addPopupCat.setEventListener();
@@ -68,6 +68,7 @@ function handleFormCatLogin(e) {
 	Cookies.set("email", `email=${dataCatFromForm.email}`);
 	buttonOpenPopup.classList.remove("visually-hidden");
 	popupLogin.closePopup();
+	
 
 }
 
@@ -175,7 +176,9 @@ const isAuthPerson = Cookies.get("email");
 if (!isAuthPerson) {
 	popupLogin.openPopup();
 	buttonOpenPopup.classList.add("visually-hidden");
+	buttonEdite.classList.add("visually-hidden");
 }
+
 checkLocalStorage();
 
 

@@ -3,7 +3,7 @@
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0px 40px 10px 40px;
+	padding: 0px 50px 10px 50px;
 }
 @media screen (max-width: 500px) {
 	.container {

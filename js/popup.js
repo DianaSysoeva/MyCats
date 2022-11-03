@@ -19,9 +19,11 @@ export class PopupCat {
 	}
 
 	openPopup() {
+	
 		this.popupCat.classList.add("popup__active");
 		document.addEventListener("keyup", this._handleEscPress);
 	}
+
 
 	closePopup() {
 		this.popupCat.classList.remove("popup__active");
