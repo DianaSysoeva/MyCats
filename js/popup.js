@@ -11,15 +11,15 @@ export class PopupCat {
 			this.closePopup();
 		}
 	}
-	
-	setContentCat(contentNode){
+
+	setContentCat(contentNode) {
 		const boxContent = this.popupCat.querySelector(".popup__content");
 		boxContent.innerHTML = '';
 		boxContent.append(contentNode);
 	}
 
 	openPopup() {
-	
+
 		this.popupCat.classList.add("popup__active");
 		document.addEventListener("keyup", this._handleEscPress);
 	}
